@@ -14,14 +14,14 @@ const Modal = (props) => {
             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div className="modal-body">
-            <p>If you delete this thing the entire universe will go down!</p>
+            <p>Se perderan todos los datos.</p>
           </div>
           <div className="modal-footer">
             <button type="button" className="btn btn-primary" data-bs-dismiss="modal">
-              Oh no!
+              Volver a configuración
             </button>
             <button type="button" className="btn btn-danger" data-bs-dismiss="modal" onClick={() => actions.handleClickDeleteContact(props.id)}>
-              Yes baby!
+              Eliminar
             </button>
           </div>
         </div>

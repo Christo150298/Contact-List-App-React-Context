@@ -7,7 +7,7 @@ const Button = () => {
   const {store, actions} = useAppContext();
 
   return (
-    <div className="d-flex justify-content-between">
+    <div className="d-flex justify-content-between mt-4">
       <button className="btn btn-danger fw-semibold text-white text-decoration-none mb-3" onClick={actions.handleBORRARAgenda}>
         BORRAR AGENDA
       </button>

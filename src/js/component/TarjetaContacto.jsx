@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Modal from "./Modal.jsx";
+import "../../styles/index.css"
 
 const TarjetaContacto = (props) => {
 
@@ -17,33 +18,33 @@ const TarjetaContacto = (props) => {
           </div>
           <div className="col-md-6">
             <div className="card-body">
-              <h5 className="card-title fs-2">{props.item.full_name}</h5>
-              <p className="card-text fs-3">
-                <i className="fa-solid fa-location-dot"></i>
+              <h5 className="card-title fs-2 mb-3">{props.item.full_name}</h5>
+              <p className="card-text fs-4">
+                <i className="fa-solid fa-location-dot me-2"></i>
                 {props.item.address}
               </p>
               <p className="card-text fs-5">
-                <i className="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-mobile-screen-button me-3"></i>
                 {props.item.phone}
               </p>
               <p className="card-text fs-6">
-                <i className="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope me-3"></i>
                 {props.item.email}
               </p>
             </div>
           </div>
-          <div className="col-md-1">
-            <p className="card-icon">
+          <div className="col-md-1 mt-3">
+            <button className="button-style">
               <Link to={"/update/" + props.id}>
                 <i className="fa-solid fa-pencil"></i>
               </Link>
-            </p>
+            </button>
           </div>
-          <div className="col-md-1">
-            <div className="card-icon">
+          <div className="col-md-1 mt-3">
+            <button className="button-style">
               <i className="fa-solid fa-trash-can" data-bs-toggle="modal" data-bs-target={`#modal-${props.id}`}></i>
               <Modal id={props.id} />
-            </div>
+            </button>
           </div>
         </div>
       </div>

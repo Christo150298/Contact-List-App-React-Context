@@ -22,18 +22,18 @@ const ModalUpdate = (props) => {
             ></button>
           </div>
           <div className="modal-body">
-            <p>You will update this Contact!</p>
+            <p>Se guardaran todos los cambios efectuados</p>
           </div>
           <div className="modal-footer">
             <button
               type="button"
-              className="btn btn-primary"
+              className="btn btn-danger"
               data-bs-dismiss="modal"
             >
-              Oh no!
+              Volver a configuracion
             </button>
-            <button type="button" className="btn btn-danger" data-bs-dismiss="modal" onClick={(e) => {actions.handleClickUpdate(e, props.objContact, props.id); navigate("/")}}>
-              Yes baby!
+            <button type="button" className="btn btn-primary" data-bs-dismiss="modal" onClick={(e) => {actions.handleClickUpdate(e, props.objContact, props.id); navigate("/")}}>
+              Guardar cambios
             </button>
           </div>
         </div>

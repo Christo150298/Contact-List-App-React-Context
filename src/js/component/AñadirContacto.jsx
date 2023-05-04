@@ -67,9 +67,9 @@ const AñadirContacto = () => {
         <button type="submit" className="btn btn-primary" onClick={(e) => {actions.handleClickSave(e, store.name, store.email, store.phone, store.address); navigate("/");}}>
           Guardar Contacto
         </button>
-        <span className="link-primary text-decoration-underline mt-3" onClick={(e) => {actions.handleHomeAndReset(e); navigate("/");}}>
+        <button className="col-2 btn btn-danger mt-3" onClick={(e) => {actions.handleHomeAndReset(e); navigate("/");}}>
           Volver a contactos
-        </span>
+        </button>
       </div>
     </form>
   );

@@ -84,9 +84,9 @@ const AñadirContactoUpdate = () => {
           Guardar Contacto
         </button>
         <ModalUpdate objContact={{name: store.name, email: store.email, phone: store.phone, address: store.address}} id={params.theid} />
-        <span className="link-primary text-decoration-underline mt-3" onClick={(e) => {actions.handleHomeAndReset(e); navigate("/");}}>
+        <button className="col-2 btn btn-danger mt-3" onClick={(e) => {actions.handleHomeAndReset(e); navigate("/");}}>
           Volver a contactos
-        </span>
+        </button>
       </div>
     </form>
   );
